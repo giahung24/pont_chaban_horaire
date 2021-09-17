@@ -162,6 +162,7 @@ def fetch_data():
         my_api.add_event(event, PONT_CALENDAR_ID)
 
 def clear_data():
+    print("Deleting all events...")
     my_api = MyGoogleCalendarAPI()
     events = my_api.get_all_events()
     for e in events:
